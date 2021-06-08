@@ -1,0 +1,15 @@
+﻿<Window x:Class="QuizGenerator.QuizRezult"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuizGenerator"
+        mc:Ignorable="d"
+         Title="Результат" Height="247" Width="531">
+    <Grid>
+        <TextBlock Margin="20,10,316,201" FontSize="14"><Run Text="Название викторины :"/></TextBlock>
+        <Button FontSize="14" Margin="112,175,113,22">Выйти</Button>
+        <TextBlock Margin="20,35,316,176" FontSize="14"><Run Text="Сложность :"/></TextBlock>
+        <TextBlock Margin="20,95,316,115" FontSize="14"><Run Text="Кол-во ответов :"/></TextBlock>
+    </Grid>
+</Window>

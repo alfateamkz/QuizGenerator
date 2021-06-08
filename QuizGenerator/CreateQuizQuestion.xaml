@@ -1,0 +1,29 @@
+﻿<Window x:Class="QuizGenerator.CreateQuizQuestion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuizGenerator"
+        mc:Ignorable="d"
+        Title="Вопрос" Height="365" Width="382">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="30,10,0,0" Text="Текст вопроса" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox  Margin="30,33,30,230"></TextBox>
+        <Button Margin="30,258,30,53">Следующий вопрос</Button>
+        <Button Margin="30,301,30,13" Content="Закончить"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,124,0,0" Text="Варианты ответа" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,144,0,0" Text="1-й" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,170,0,0" Text="2-й" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,198,0,0" Text="3-й" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,223,0,0" Text="4-й" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox  Margin="60,145,43,189"/>
+        <TextBox  Margin="60,170,43,164"/>
+        <TextBox  Margin="60,198,43,136"/>
+        <TextBox  Margin="60,223,43,111"/>
+        <RadioButton Margin="344,145,15,184"></RadioButton>
+        <TextBlock HorizontalAlignment="Left" Margin="340,124,0,0" Text="Ответ" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <RadioButton Margin="344,170,15,159"/>
+        <RadioButton Margin="344,198,15,131"/>
+        <RadioButton Margin="344,223,15,106"/>
+    </Grid>
+</Window>

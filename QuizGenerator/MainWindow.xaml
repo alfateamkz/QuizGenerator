@@ -1,0 +1,21 @@
+﻿<Window x:Class="QuizGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuizGenerator"
+        mc:Ignorable="d"
+        Title="Главное окно" Height="318" Width="368">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="159*"/>
+            <RowDefinition Height="52*"/>
+            <RowDefinition Height="91*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Margin="10,10,226,127"  Grid.Row="0">Список викторин</TextBlock>
+        <ListBox Margin="10,49,25,10" Grid.Row="0"/>
+        <Rectangle HorizontalAlignment="Left" Fill="AntiqueWhite" Height="4"  Stroke="Black" VerticalAlignment="Top" Width="370" Grid.Row="1"/>
+        <Button Margin="0,9,203,0" Content="Создать викторину" FontSize="14" Grid.Row="1" Click="CreateQuiz"/>
+        <Button Margin="186,9,18,0" Content="Некоторые факты" FontSize="14" Grid.Row="1" Click="Facts"/>
+    </Grid>
+</Window>
