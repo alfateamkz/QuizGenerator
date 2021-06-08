@@ -6,9 +6,10 @@
         xmlns:local="clr-namespace:QuizGenerator"
         mc:Ignorable="d"
         Title="Создать викторину" Height="267" Width="378">
-    <Grid>
+    <Grid Background="{DynamicResource LgbtBG}">
         <TextBlock FontSize="16" Margin="57,52,76,171"><Run Text="Сложность"/></TextBlock>
         <ComboBox FontSize="16" Margin="57,80,76,151"/>
-        <Button FontSize="16" Margin="57,117,76,90" Content="Поехали"/>
+        <Button  Style="{DynamicResource ButtonTemplate}"  FontSize="16" Margin="57,117,76,90" Content="Поехали"/>
+
     </Grid>
 </Window>

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:QuizGenerator"
         mc:Ignorable="d"
         Title="Некоторые факты" Height="450" Width="800">
-    <Grid>
+    <Grid Background="{DynamicResource LgbtBG}">
         <FlowDocumentScrollViewer>
             <FlowDocument>
                 <Paragraph>Некоторые факты о викторинах</Paragraph>

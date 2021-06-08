@@ -1,0 +1,33 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <LinearGradientBrush x:Key="LgbtBG"> 
+        <GradientStop Color="#FF0018" Offset="0.16"/>
+        <GradientStop Color="#FFA52C" Offset="0.33"/>
+        <GradientStop Color="#FFFF41" Offset="0.5"/>
+        <GradientStop Color="#008018" Offset="0.66"/>
+        <GradientStop Color="#0000F9" Offset="0.83"/>
+        <GradientStop Color="#86007D" Offset="1"/>
+    </LinearGradientBrush>
+
+    <Style  x:Key="ButtonTemplate"  TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="MouseEnter">
+                <EventTrigger.Actions>
+                    
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+
+</ResourceDictionary>

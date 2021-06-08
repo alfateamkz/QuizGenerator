@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="Background" TargetType="Grid">
+        <Setter Property="Background">
+            <Setter.Value>
+                <RadialGradientBrush>
+                    <GradientStop Color="Bisque" Offset="0"></GradientStop>
+                    <GradientStop Color="Coral" Offset="0.5"></GradientStop>
+                    <GradientStop Color="LightYellow" Offset="1"></GradientStop>
+                </RadialGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ButtonStyle" TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <SolidColorBrush Color="AntiqueWhite"></SolidColorBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

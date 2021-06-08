@@ -6,11 +6,11 @@
         xmlns:local="clr-namespace:QuizGenerator"
         mc:Ignorable="d"
         Title="Вопрос" Height="365" Width="382">
-    <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="30,10,0,0" Text="Текст вопроса" TextWrapping="Wrap" VerticalAlignment="Top"/>
+    <Grid Background="{DynamicResource LgbtBG}">
+        <TextBlock  HorizontalAlignment="Left" Margin="30,10,0,0" Text="Текст вопроса"  TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBox  Margin="30,33,30,230"></TextBox>
-        <Button Margin="30,258,30,53">Следующий вопрос</Button>
-        <Button Margin="30,301,30,13" Content="Закончить"/>
+        <Button Margin="30,258,30,53"  Style="{DynamicResource ButtonTemplate}" >Следующий вопрос</Button>
+        <Button Margin="30,301,30,13"  Style="{DynamicResource ButtonTemplate}"  Content="Закончить "/>
         <TextBlock HorizontalAlignment="Left" Margin="30,124,0,0" Text="Варианты ответа" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="30,144,0,0" Text="1-й" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="30,170,0,0" Text="2-й" TextWrapping="Wrap" VerticalAlignment="Top"/>
