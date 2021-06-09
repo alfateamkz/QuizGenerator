@@ -4,13 +4,13 @@ using System.Text;
 
 namespace QuizGenerator.Logic
 {
-    public class QuizRepository
+    public static class QuizRepository
     {
-        public List<Quiz> Quizzes { get; set; }
+        public static List<Quiz> Quizzes { get; set; }
 
-        public QuizRepository()
+        public static void AddQuiz(Quiz quiz)
         {
-
+            Quizzes.Add(quiz);
         }
     }
 }

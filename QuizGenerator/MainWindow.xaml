@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuizGenerator"
         mc:Ignorable="d" WindowStyle="ThreeDBorderWindow"
-        Title="Главное окно" Height="318" Width="368">
+        Title="Главное окно" Height="318" Width="368" x:Name="window">
     <Grid Background="{DynamicResource LgbtBG}">
         <Grid.RowDefinitions>
             <RowDefinition Height="159*"/>
@@ -15,7 +15,28 @@
         <TextBlock Margin="10,10,226,127"  Grid.Row="0">Список викторин</TextBlock>
         <ListBox Background="{DynamicResource LgbtBG}"  Margin="10,49,25,10" Grid.Row="0"/>
         <Rectangle HorizontalAlignment="Left" Fill="AntiqueWhite" Height="4"  Stroke="Black" VerticalAlignment="Top" Width="370" Grid.Row="1"/>
-        <Button Margin="0,9,203,0"  Style="{DynamicResource ButtonTemplate}"  Content="Создать викторину" FontSize="14" Grid.Row="1" Click="CreateQuiz"/>
+        <Button Margin="0,9,203,0"  Style="{DynamicResource ButtonTemplate}" Content="Создать викторину" FontSize="14" Grid.Row="1" Click="CreateQuiz"/>
         <Button Margin="186,9,18,0" Style="{DynamicResource ButtonTemplate}" Content="Некоторые факты" FontSize="14" Grid.Row="1" Click="Facts"/>
+        <Button x:Name="helloButton" Margin="130,22,128,21" Grid.Row="2">
+            <Button.Background>
+                <SolidColorBrush x:Name="buttonColor" Color="Black" />
+            </Button.Background>
+            <Button.Triggers>
+                    <EventTrigger RoutedEvent="Button.Click">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <ColorAnimation Storyboard.TargetProperty="Color" Storyboard.TargetName="buttonColor" AutoReverse="True" Duration="0:0:3" To="Yellow" From="{Binding ElementName=buttonColor, Path=Color}"/>
+                                <DoubleAnimation Storyboard.TargetProperty="Width" Duration="0:0:2" To="{Binding ElementName=window,Path=Width}" AutoReverse="True" From="30"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+                </Button.Triggers>
+        </Button>
     </Grid>
+    <Window.Resources>
+ 
+    </Window.Resources>
 </Window>
+

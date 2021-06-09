@@ -7,9 +7,10 @@
         mc:Ignorable="d"
         Title="Создать викторину" Height="267" Width="378">
     <Grid Background="{DynamicResource LgbtBG}">
+        <Grid>
         <TextBlock FontSize="16" Margin="57,52,76,171"><Run Text="Сложность"/></TextBlock>
-        <ComboBox FontSize="16" Margin="57,80,76,151"/>
+        <ComboBox FontSize="16" Margin="57,80,76,151" IsSynchronizedWithCurrentItem="True"/>
         <Button  Style="{DynamicResource ButtonTemplate}"  FontSize="16" Margin="57,117,76,90" Content="Поехали"/>
-
+        </Grid>
     </Grid>
 </Window>
